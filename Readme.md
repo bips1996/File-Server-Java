@@ -1,6 +1,7 @@
 
 # TCP File server
 This mini project enables the file sharing between the Client and Server where Client can request and download files if available at server directory.
+[Click here for github repository](https://github.com/bips1996/File-Server-Java)
 
 ## 1. Technology  stack
 I have followed the TCP client/server reliable communication implemented using the [JAVA](https://www.java.com/en/) socket programming.
