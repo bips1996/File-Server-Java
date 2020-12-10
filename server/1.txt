@@ -1,21 +1,8 @@
-sages have been simplified; recompile with -Xdiags:verbose to get full output
-2 errors
-error: compilation failed
+This week is the busiest week for many of us in AWS – this is the re:Invent time. Our annual cloud conference that will be packed with series of announcements and some of the best talks.  I just wanted to highlight some of the talks:
 
-C:\Users\BIPLABA\Desktop\clienr>java Client.java
-Enter an IP address:
-localhost
-Enter a port number:
-3000
-Enter the file name you wish to send or type 'quit' to leave:
-2.txt
-File does not exist, now quitting.
-
-C:\Users\BIPLABA\Desktop\clienr>javac Client.java
-
-C:\Users\BIPLABA\Desktop\clienr>java Client.java
-Enter an IP address:
-localhost
-Enter a port number:
-3000
-Enter the file name you wish to
+    Keynotes: Needless to say, Wednesday and Thursday keynotes by Andy and Werner will be filled with customer highlights, announcements etc.
+    Spotlight talks: Spotlight talks are an exciting set of talks. These talks are meant to be technically deep and informative for attendees. Some of the speakers are our Distinguished engineers like James Hamilton, Allan Vermuellen (Creator of S3). A few spotlight talks to watch out (note all are live streamed, please register here):
+        SPOT 301: James Hamilton’s talk on AWS Pace of Innovation. James is an awesome speaker and he is going to talk some of the recent innovations in Networking and databases.
+        SPOT 302:  (Shameless plug) This is a talk I am giving with Allan Vermuellen (VP/Distinguished Engineer). Allan built Amazon S3 and is a good friend. We will be talking about core distributed systems primitives that form the basis for various AWS services. Al and I have worked together now for 8 years and built various core distributed systems together and will be fun to talk with him on distributed systems – if you are interested in large scale systems stop by!
+        SPOT 303: This is a conversation talk where we talk to some of our top AWS customers about their best database practices. If you want to hear from how some of our top AWS customers are building stateful services on AWS, their best practices on how they choose databases, their reliability, scalability, and operational best practices. I expect this to be a good learning experience for both experts and beginning customers.
+        SPOT 305: This is a talk I am very excited to see where Khawaja (who is an awesome speaker) and Marvin will be talking through building event driven applications on AWS. They have a cool demo as well!
