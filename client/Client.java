@@ -32,7 +32,7 @@ class Client implements ActionListener{
 		jp1.setBounds(0,0,500,400);
 		jp1.setBackground(Color.DARK_GRAY);
 
-		jl10 = new JLabel("File Server ini project by Biplaba Samantaray");
+		jl10 = new JLabel("File Server mini project by Biplaba Samantaray");
 		jl10.setBounds(40,280, 500,30);
 		jl10.setFont(new Font("Serif", Font.BOLD, 18));
 		jl10.setForeground(Color.white) ;
