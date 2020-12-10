@@ -1,34 +1,33 @@
 
 # TCP File server
-This mini projects enables the file sharing between the Client and Server where Client could request and download any file available at server directory.
+This mini project enables the file sharing between the Client and Server where Client can request and download files if available at server directory.
 
 ## 1. Technology  stack
-
-I have followed the TCP client/server reliable communication implemented through the [JAVA](https://www.java.com/en/) socket programming.
+I have followed the TCP client/server reliable communication implemented using the [JAVA](https://www.java.com/en/) socket programming.
 
 ## 2. Dependencies
- java(jdk7 or more)
+ java(jdk7 or above)
 
 ## 3. How to run
-First compile and run the server by following command in command prompt or terminal opened in server directory
+First compile and run the server by using following command in command prompt or terminal opened in server directory
 ```bash
 javac Server.java
 java Server.java
 ```
-It will definitely ask for a port to run the server enter a port number(eg- 3000,8000)
+It will ask for a port to run the server enter a port number(eg- 3000,8000)
 
-Once the server is running and waiting for the client , open the client directory and open a command prompt/ Terminal there and run following command :-
+Once server starts running then wait for the client , open the client directory and open a command prompt/ Terminal there and run following command :-
 ```bash
 javac Client.java
 java Client.java
 ```
-A GUI will be opened enter the ip as **localhost** and port as **server port number**.
+A GUI will be opened enter the IP as **localhost** and port as **server port number**.
 
 Request with a file name to download
 
 ## 4. Explanation of Classes and Methods
 ## 4.1 Server
-The server  class follows the follwing classes and key methods
+The server class contains the follwing classes and key methods
 **class SERVER : **
 ```java
 class Server
@@ -39,7 +38,7 @@ class Server
         //Create two sockets
         ServerSocket listenSocket = null;
         Socket clientSocket = null;
-        //try to connect to the port
+        //try to connect to the port 
         //if port not free :: Throw Exception
         //if port is free :: wait for the client
         while(true)
@@ -60,7 +59,7 @@ class ClientHandler implementts Runnable
         {
             //Receive the client request filename
             //if req == 'quit' it disconnect from the client
-            //else
+            //else 
             //Collect the file name and search whether it is in the server directory or not
             //if present :: Serialize it send the length of the file followled by the byte stream of the file
             //wait for the next file request
@@ -69,7 +68,7 @@ class ClientHandler implementts Runnable
 }
 ```
 ## 4.2 Client
-The client follows the follwing class and key methods
+The client contains the follwing class and key methods
 ```java
 class Client implements ActionListner
 {
@@ -80,7 +79,7 @@ class Client implements ActionListner
     }
     public int connection(IP,port)
     {
-        //This method takes the IP and port number as the argument
+        //This method takes the IP and port number as the argument 
         //check availibility of the server
         //Connect to the server
     }
@@ -108,21 +107,21 @@ class Client implements ActionListner
         }
         if(bt2quit clicked)
         {
-            //The closeConnection() method is closed
+            //The closeConnection() method is closed 
         }
     }
 }
 ```
 ## 5. Issues to be solved
-- Specific Exception Hadling to be done
-- Some UI updation at client end
-- UI at the serverside to be created
+- Specific Exception Handling to be done
+- Some UI modification at client side
+- UI implementation at the serverside to be done
 ## 6. Scope of the project
 - To be developed for a multicasting environment with UDP implementation
 - Target will be to achive the distributed fileserver
 - Rather than directory ,file to be accessed from the database at each peer
 ## 7. References
-- The key references is the [TCP program of adding numbers that discussed in the class](https://github.com/bips1996/TCP_client_server_java) and the concepts that are taught in the Distributed Computing class.
+- The key references is the [TCP program of adding numbers which was discussed in the class](https://github.com/bips1996/TCP_client_server_java) and the concepts that are taught in the Distributed Computing class.
 - Some information collected from web for better understanding
 ## 8. Conclusion
-TCP provides reliability ,so creating a file server with TCP implementation is relatively easy task than implenting the file server in a distributed environment. This project includes the **java socket programming with client server architecture** . The further works to be implemented soon by enabling this project to work as **a peer to peer file sharing application**.
+TCP provides reliability , creating a file server with TCP implementation for client-server model is relatively easier task than implenting the file server in a distributed environment. This project includes the **java socket programming with client server architecture** . The further works to be implemented soon by enabling this project to work as **a peer to peer file sharing application**.
